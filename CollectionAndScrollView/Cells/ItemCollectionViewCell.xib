@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="CollectionAndScrollView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="394"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="394"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-cq-yHo">
+                        <rect key="frame" x="0.0" y="0.0" width="412" height="394"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waT-Ph-AVw" userLabel="SecondaryVIew">
+                                <rect key="frame" x="2" y="2" width="408" height="390"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ak-3j-4L0">
+                                        <rect key="frame" x="0.0" y="350" width="408" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-NT-PXd">
+                                                <rect key="frame" x="10" y="10" width="37.5" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90266100888324874" green="0.90266100888324874" blue="0.90266100888324874" alpha="0.75262200342465757" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="evJ-NT-PXd" secondAttribute="trailing" constant="20" id="BBN-yQ-tzC"/>
+                                            <constraint firstItem="evJ-NT-PXd" firstAttribute="top" secondItem="4ak-3j-4L0" secondAttribute="top" constant="10" id="Gsi-G3-tdZ"/>
+                                            <constraint firstAttribute="height" constant="40" id="VKT-aW-rTg"/>
+                                            <constraint firstAttribute="bottom" secondItem="evJ-NT-PXd" secondAttribute="bottom" constant="10" id="XtF-1j-vuE"/>
+                                            <constraint firstItem="evJ-NT-PXd" firstAttribute="leading" secondItem="4ak-3j-4L0" secondAttribute="leading" constant="10" id="rke-IM-tPP"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-jB-N7K">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="350"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kFZ-jB-N7K" firstAttribute="top" secondItem="waT-Ph-AVw" secondAttribute="top" id="Azm-Ix-A2r"/>
+                                    <constraint firstItem="4ak-3j-4L0" firstAttribute="top" secondItem="kFZ-jB-N7K" secondAttribute="bottom" id="DcS-T5-ncq"/>
+                                    <constraint firstAttribute="trailing" secondItem="kFZ-jB-N7K" secondAttribute="trailing" id="GnZ-0m-xsY"/>
+                                    <constraint firstItem="kFZ-jB-N7K" firstAttribute="leading" secondItem="waT-Ph-AVw" secondAttribute="leading" id="HYW-9p-H0F"/>
+                                    <constraint firstItem="4ak-3j-4L0" firstAttribute="leading" secondItem="waT-Ph-AVw" secondAttribute="leading" id="L9b-vj-0AH"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ak-3j-4L0" secondAttribute="bottom" id="dLm-1Q-OwC"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ak-3j-4L0" secondAttribute="trailing" id="vFU-1m-UqL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="waT-Ph-AVw" firstAttribute="top" secondItem="cI4-cq-yHo" secondAttribute="top" constant="2" id="081-1Z-twR"/>
+                            <constraint firstAttribute="trailing" secondItem="waT-Ph-AVw" secondAttribute="trailing" constant="2" id="5Jw-Ut-9Af"/>
+                            <constraint firstItem="waT-Ph-AVw" firstAttribute="leading" secondItem="cI4-cq-yHo" secondAttribute="leading" constant="2" id="CHk-4c-zSt"/>
+                            <constraint firstAttribute="bottom" secondItem="waT-Ph-AVw" secondAttribute="bottom" constant="2" id="aeU-4z-Sly"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cI4-cq-yHo" secondAttribute="trailing" id="ZQ4-9X-4KS"/>
+                <constraint firstItem="cI4-cq-yHo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mOo-Bp-Mn2"/>
+                <constraint firstAttribute="bottom" secondItem="cI4-cq-yHo" secondAttribute="bottom" id="uMF-F9-wC6"/>
+                <constraint firstItem="cI4-cq-yHo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wlR-Os-4Ki"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="412" height="394"/>
+            <connections>
+                <outlet property="bottomview" destination="4ak-3j-4L0" id="nrT-a1-iJC"/>
+                <outlet property="imageView" destination="kFZ-jB-N7K" id="Ms7-El-6j1"/>
+                <outlet property="mainView" destination="cI4-cq-yHo" id="ihb-NK-KVf"/>
+                <outlet property="secondaryView" destination="waT-Ph-AVw" id="JFh-8O-zRQ"/>
+                <outlet property="titleLabel" destination="evJ-NT-PXd" id="I3G-42-545"/>
+            </connections>
+            <point key="canvasLocation" x="398.55072463768118" y="243.75"/>
+        </collectionViewCell>
+    </objects>
+</document>
